@@ -25,7 +25,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId> <!-- Hibernate is a child dependency of this dependency -->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -33,7 +33,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId> <!-- We have tomcat because of this child dependencies -->
 		</dependency>
 
 		<dependency>
@@ -58,3 +58,5 @@
 	</build>
 
 </project>
+
+<!-- Run app: ./mvnw spring-boot:run -->
