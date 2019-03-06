@@ -22,7 +22,7 @@ public class BookController {
         This is going to tell Spring Data JPA to go out and get a list of books from
         the database and Spring MVC is going to associate that list which is our model
         */
-        model.addAttribute("books", bookRepository);
+        model.addAttribute("books", bookRepository.findAll()); // return an iterable
         return "books"; // view name
     }
 }
